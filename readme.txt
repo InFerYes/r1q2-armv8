@@ -1,3 +1,14 @@
+Changes made to the R1Q2 code to make it build for ARMv8, tested on Odroid C4.
+This code's makefile has been hardcoded to build "arm", will not work on other 
+architectures. See the original repository for x86, x86_64 or see the armv7
+repository for ARMv7 version of R1Q2, which was built for and tested on Odroid
+C1. No guarantees of success, I don't know what I'm doing, I just make it build.
+
+These R1Q2 builds are solely made to run as servers and work with q2admin-tsmod
+when built for the same architecture. Example servers run DDAY, a Quake 2
+total-conversion mod.
+
+
 R1Q2 Client README (short version)
 ==================================
 Thanks for downloading R1Q2! This file is a very quick introduction to some of

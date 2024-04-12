@@ -1,6 +1,6 @@
 VPATH=../../game ../../linux ../../qcommon ../../server
 
-CFLAGS+=-DDEDICATED_ONLY -DANTICHEAT
+CFLAGS+=-DDEDICATED_ONLY -DANTICHEAT -fcommon
 
 r1q2ded_SRC:=cmd.c cmodel.c common.c crc.c cvar.c files.c md4.c net_chan.c \
 	     mersennetwister.c redblack.c sv_ccmds.c sv_ents.c sv_game.c \

@@ -1,9 +1,9 @@
 VPATH=../../game
 
-
 # this nice line comes from the linux kernel makefile
-ARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ -e s/arm.*/arm/ -e s/sa110/arm/ -e s/alpha/axp/)
-
+ARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ -e s/sa110/arm/ -e s/alpha/axp/ -e s/armv7l/arm/ -e s/armv8h/arm/ -e s/aarch64/arm/)
+# ARCH := arm
+$(info    ARCH is $(ARCH))
 CFLAGS+=-fPIC -DGAME_DLL
 
 game_SRC:=g_ai.c g_chase.c g_cmds.c g_combat.c g_func.c g_items.c g_main.c\
